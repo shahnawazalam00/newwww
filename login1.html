@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        form {
+            border: 3px solid #0b0b0b;
+            width: 50%;
+        }
+        
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #131212;
+            box-sizing: border-box;
+        }
+        
+        button {
+            background-color: #0a0b0b;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        button:hover {
+            opacity: 0.8;
+        }
+        
+        
+        
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+        }
+        
+        img.avatar {
+            width: 40%;
+            border-radius: 50%;
+        }
+        
+        .container {
+            padding: 16px;
+        }
+        
+    
+    
+    </style>
+</head>
+
+<body>
+<center>
+
+    <h2>Login Form</h2>
+
+    <form action="thanks1.html" method="post">
+        <div class="imgcontainer">
+            <img src="img_avatar2.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+            <table>
+                <tr>
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+                </tr>
+                <tr>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+                </tr>
+        <tr><td>
+            <button type="submit">Login</button>
+        </td></tr>
+        <tr><td>
+            <button type="submit">Sign Up</button>
+        </td></tr>
+    </table>
+            <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+        </div>
+
+        
+    </form>
+    </center>
+</body>
+
+
+</html>
