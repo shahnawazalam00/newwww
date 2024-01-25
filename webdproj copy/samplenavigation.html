@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Basic styling for the navigation bar */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    /* Styling for the active link */
+    .active {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <ul>
+    <li><a href="#" onclick="toggleActive(this)">Home</a></li>
+    <li><a href="#" onclick="toggleActive(this)">About</a></li>
+    <li><a href="#" onclick="toggleActive(this)">Services</a></li>
+    <li><a href="#" onclick="toggleActive(this)">Contact</a></li>
+  </ul>
+
+  <!-- Your content goes here -->
+
+  <script>
+    function toggleActive(element) {
+      // Remove the 'active' class from all links
+      document.querySelectorAll('a').forEach(link => link.classList.remove('active'));
+      
+      // Add the 'active' class to the clicked link
+      element.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"  type="text/css" href="loginstyle.css">
+</head>
+
+
+<body bgcolor="white">
+
+
+    <script>
+        function validate(){
+            var msg;
+            var pwd=document.myform.userpass.value.length;
+            if(pwd>8){ msg="Strenght : strong"; }
+            else if(pwd>5){ msg="Strenght : medium"; }
+            else { msg="Strenght : poor"; }
+            document.getElementById('pass').innerText=msg;
+            
+        }
+        function revalidate(){
+            var msg;
+            var pwd=document.myform.userpass.value;
+            var repwd=document.myform.reuserpass.value;
+            if(pwd==repwd){msg="password  matches";}
+            else {msg="password do not match";}
+            document.getElementById('repass').innerText=msg;
+        }
+    </script>
+
+
+
+<center>
+	
+<form name="myform">
+<h1>Sign Up</h1>
+<div class="div1">
+<table><tr>
+<td>
+<input type="text" name="username" placeholder="User Name"></td></tr>
+<tr><td>
+<input type="text" name="email" placeholder="Email"></td></tr>
+<tr><td><input type="password" name="userpass" placeholder="Create Password" onkeyup="validate()"><br>
+  <div id="pass" ></div>
+</td></tr>
+<tr><td><input type="password" name="reuserpass" placeholder="Confirm Password" onkeyup="revalidate()"><br>
+ <div id="repass" ></div>
+</td></tr>
+<tr><td><button><label>Sign Up</label></button></td></tr>
+</from>
+</table></div>
+<div class="div2">
+<tr><td><a href="newlogin2.html"><label>Login</label></a></td></tr></div>
+
+</form>
+</center>
+</body>
+</html>
